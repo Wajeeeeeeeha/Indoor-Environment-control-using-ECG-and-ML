@@ -9,7 +9,7 @@ investigate correlation of combined effect of noise, light, temperature dependin
 Thirdly, to implement various Machine Learning algorithms such as K-Nearest Neighbors (KNN), Support Vector 
 Machine (SVM), Logistic Regression (LR) to predict the combined effect of IEQ on human
 
-#Introduction
+# Introduction
 The current study is aimed at evaluating the combined effects of indoor noise, light and temperature on human
 neurophysiological responses. This study included 34 individuals who were exposed to varying temperatures (16 
 degrees Celsius, 22 degrees Celsius, and 31 degrees Celsius), light (150 lumens per meter square, 250 lumens per 
@@ -36,11 +36,11 @@ have numeric data which contain memory score of each participant. Professional i
 and 2 for admin staff, teachers and students respectively. For gender we give 1 value for female and 0 for male. Finally, 
 we add these values along with noise, temperature and light values for respective participants in our csv file.
 
-#Data 
+# Data 
 See the copy of data detail.csv file. Its just a sample data. Orignal data is not shared due to privacy contract with patients. 
 
-#Run code
-#step 1
+# Run code
+# step 1
 Run final-ECg-preprocessing file to convert ECG paper records into a 1- D signal. All personal information was removed 
 from input image of our ECG data. Next step was to divide input image into 13 leads for additional information. 
 Further processing applied on each individual leads (1-13) by eliminating gridlines, changing to grayscale, applying 
@@ -48,7 +48,7 @@ Gaussian filtering, and performed thresh holding to convert to binary image. Usi
 image was traced to extract only the signals and the values are scaled using the Min-Max Scalar. 
 The normalized output is stored as a 2D signal in Comma Separated Value (CSV) format.
 
-#steo 2
+# step 2
 Run ML on ECG.ipynb file to execute to implement various Machine Learning algorithms such as K-Nearest Neighbors (KNN), Support Vector 
 Machine (SVM), Logistic Regression (LR) to predict the combined effect of IEQ on human.
 
